@@ -1,0 +1,38 @@
+[
+  {
+    "name": "CocaCola",
+    "price": 55,
+    "urlImg": "cola.png",
+    "id": "d1"
+  },
+  {
+    "name": "CocaCola Zero",
+    "price": 55,
+    "urlImg": "cola-zero.png",
+    "id": "d2"
+  },
+  {
+    "name": "Pepsi",
+    "price": 50,
+    "urlImg": "pepsi.png",
+    "id": "d3"
+  },
+  {
+    "name": "Pepsi Max",
+    "price": 50,
+    "urlImg": "pepsi-zero.png",
+    "id": "d4"
+  },
+  {
+    "name": "Fanta",
+    "price": 45,
+    "urlImg": "fanta.png",
+    "id": "d5"
+  },
+  {
+    "name": "Sprite",
+    "price": 45,
+    "urlImg": "sprite.png",
+    "id": "d6"
+  }
+]

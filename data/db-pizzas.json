@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Маргарита",
+    "price": 350,
+    "urlImg": "margarita.png",
+    "id": "p0"
+  },
+  {
+    "name": "New York",
+    "price": 450,
+    "urlImg": "mew-york.png",
+    "id": "p1"
+  },
+  {
+    "name": "Італійська",
+    "price": 375,
+    "urlImg": "italian.png",
+    "id": "p2"
+  },
+  {
+    "name": "Пепероні",
+    "price": 320,
+    "urlImg": "paperoni.png",
+    "id": "p3"
+  },
+  {
+    "name": "Салямі",
+    "price": 350,
+    "urlImg": "chesse.png",
+    "id": "p4"
+  },
+  {
+    "name": "Морська",
+    "price": 450,
+    "urlImg": "sea.png",
+    "id": "p5"
+  },
+  {
+    "name": "Грибна",
+    "price": 375,
+    "urlImg": "grybna.png",
+    "id": "p6"
+  },
+  {
+    "name": "Техас",
+    "price": 420,
+    "urlImg": "texas.png",
+    "id": "p7"
+  }
+]

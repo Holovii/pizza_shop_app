@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Shop</title>
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container header">
+        <nav class="header__nav">
+          <a href="./index.html">
+            <img src="./src/img/logo.svg" alt="logo__img" />
+          </a>
+          <ul class="header__list">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#pizzas">Піци</a></li>
+            <li><a href="#drinks">Напої</a></li>
+          </ul>
+          <button id="open-cart">
+            <img src="./src/img/basket.svg" alt="basket__item" />
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <div class="container home__section">
+          <div class="home__box__one">
+            <h1 class="hero__title">
+              Найшвидша Доставка
+              <img src="./src/img/title-icon.png" alt="title__icon" /> Піци
+            </h1>
+            <p class="about__home_subtitle">
+              Ми доставимо соковиту піцу для вашої родини за 30 хвилин, якщо
+              кур'єр запізнюється - <span>піца безкоштовно!</span>
+            </p>
+            <p class="cooking__p">Процес приготування:</p>
+            <a
+              class="video__link"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=sv3TXMSv6Lw&ab_channel=Tasty"
+              ><img src="./src/img/play.png" alt="play-img"
+            /></a>
+            <br />
+            <a href="#pizzas" class="home__btn">Меню</a>
+            <img
+              class="arrow__home__icon"
+              src="./src/img/home-arrow-img.png"
+              alt="arrow-icon"
+            />
+          </div>
+          <div class="home__box__two">
+            <img src="./src/img/pizza-icon.png" alt="pizza-home-icon" />
+            <img src="./src/img/hero-img.jpg" alt="hero-image" />
+            <img src="./src/img/potatos-icon.png" alt="potatos-home-icon" />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container about__section">
+          <div class="about__box__two">
+            <img src="./src/img/pizza-icon.png" alt="pizza-icon" />
+            <img src="./src/img/about-pizza-img.png" alt="pizzas-img-about" />
+            <img src="./src/img/potatos-icon.png" alt="potatos icon" />
+          </div>
+          <div class="about__box__one">
+            <h2>Про нас</h2>
+            <p>
+              Всього за пару років ми відкрили 6 точок в різних містах: Києві,
+              Львові, Одесі, Вінниці, Дніпрі, а в майбутньому плануємо розвивати
+              мережу і в інших великих містах України.
+            </p>
+            <img src="./src/img/variable-pizza-img.png" alt="pizzas-icon" />
+            <p>
+              Площа кухні кожного пункту не менше: 400-500 кв. метрів, сотні
+              співробітників, які безперебійно виконують роботу, щоб вчасно
+              приймати, готувати, формувати та доставляти замовлення клієнтів.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="pizzas">
+        <div class="container">
+          <h2>Піци</h2>
+          <div class="products-container" data-category="pizzas"></div>
+        </div>
+      </section>
+      <section id="drinks">
+        <div class="container">
+          <h2>Напої</h2>
+          <div class="products-container" data-category="drinks"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="cart-modal">
+      <div class="modal-content">
+        <button id="close-cart">Закрити</button>
+        <h2>Кошик</h2>
+        <div class="basket-items"></div>
+        <p>Загальна вартість: <span id="total-price">0</span> грн</p>
+        <p>Вартість доставки: <span id="delivery-price">0</span> грн</p>
+        <p>
+          <strong>До сплати: <span id="final-price">0</span> грн</strong>
+        </p>
+        <button id="clear-cart">Очистити кошик</button>
+        <hr />
+        <h3>Оформити замовлення</h3>
+        <label>
+          <input type="radio" name="delivery-option" value="pickup" checked />
+          Самовивіз
+        </label>
+        <label>
+          <input type="radio" name="delivery-option" value="delivery" />
+          Доставка
+        </label>
+        <br /><br />
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required />
+        <br /><br />
+        <label for="address">Адреса доставки:</label>
+        <input type="text" id="address" name="address" />
+        <br /><br />
+        <label for="phone">Номер телефону:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+380XXXXXXXXX"
+          required
+        />
+        <span id="phone-error" style="color: red; display: none"
+          >Введіть коректний номер</span
+        >
+        <br /><br />
+        <button id="place-order">Замовити</button>
+      </div>
+    </div>
+
+    <script src="./src/scripts/main.js"></script>
+  </body>
+</html>
