@@ -20,7 +20,7 @@
             <li><a href="#pizzas">Піци</a></li>
             <li><a href="#drinks">Напої</a></li>
           </ul>
-          <button id="open-cart">
+          <button id="open-cart" class="basket__btn">
             <img src="./src/img/basket.svg" alt="basket__item" />
           </button>
         </nav>
@@ -84,7 +84,7 @@
         </div>
       </section>
       <section id="pizzas">
-        <div class="container">
+        <div class="container products__section">
           <h2>Піци</h2>
           <div class="products-container" data-category="pizzas"></div>
         </div>
@@ -99,7 +99,9 @@
 
     <div class="modal" id="cart-modal">
       <div class="modal-content">
-        <button id="close-cart">Закрити</button>
+        <button id="close-cart">
+          <img src="./src/img/close.png" alt="close-icon">
+        </button>
         <h2>Кошик</h2>
         <div class="basket-items"></div>
         <p>Загальна вартість: <span id="total-price">0</span> грн</p>

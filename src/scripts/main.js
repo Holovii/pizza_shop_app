@@ -1,5 +1,3 @@
-
-
 const basketItemsContainer = document.querySelector(".basket-items");
 const totalPriceElement = document.getElementById("total-price");
 const deliveryPriceElement = document.getElementById("delivery-price");
@@ -122,6 +120,7 @@ function renderProducts(products, container) {
                         <div class="product-card">
                             <img src="./src/img/${p.urlImg}" alt="${p.name}">
                             <h3>${p.name}</h3>
+                            <p>${p.about}</p>
                             <p>${p.price} грн</p>
                             <button 
                                 data-id="${p.id}" 
@@ -159,7 +158,3 @@ document.querySelectorAll('input[name="delivery-option"]').forEach((radio) => {
 });
 
 updateCartUI();
-
-
-
-
