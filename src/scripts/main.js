@@ -65,9 +65,11 @@ function updateCartUI() {
     itemDiv.innerHTML = `
                         <span>${item.name}</span>
                         <span>${item.price} грн</span>
+                        <span class="value__item">
                         <button data-id="${item.id}" class="decrease">-</button>
                         <span>${item.quantity}</span>
                         <button data-id="${item.id}" class="increase">+</button>
+                        </span>
                         <button data-id="${item.id}" class="remove">x</button>
                     `;
     basketItemsContainer.appendChild(itemDiv);

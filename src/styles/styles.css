@@ -73,23 +73,98 @@ p {
   padding: 20px;
   border-radius: 8px;
   width: 90%;
-  max-width: 500px;
+  max-width: 700px;
+}
+
+.modal-content p {
+  color: var(--brand-color-white);
+}
+
+.basket__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#total-price,
+#delivery-price,
+#final-price {
+  color: greenyellow;
+}
+
+#delivery-price {
+  margin-bottom: 15px;
 }
 
 #close-cart {
   float: right;
 }
 
+#clear-cart {
+  margin-bottom: 10px;
+  color: #ff6432;
+}
+
+.basket-box {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.basket__container__one p {
+  margin-bottom: 5px;
+}
+
 .basket-item {
-  background: linear-gradient(215deg, #ff5924 0%, #ffa229 100%);
+  background-color: var(--brand-color-white);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 5px;
 }
 
+.value__item {
+  border: 1px solid var(--brand-color-white);
+  border-radius: 50px;
+  padding: 2px;
+  margin: 5px;
+}
+
+#place-order {
+  margin: auto;
+  border-radius: 100px;
+  width: 229px;
+  height: 62px;
+  background: linear-gradient(214deg, #fe9c1c 0%, #ff5e2a 100%);
+}
+
+#place-order:hover {
+  background: transparent;
+  border: 1px solid var(--brand-color-orange);
+  transition: 0.3s;
+}
+
 .modal.open {
   display: flex;
+}
+
+.basket__container__two h3 {
+  margin-bottom: 10px;
+}
+
+.basket__container__two input {
+  border: 1px solid var(--brand-color-orange);
+  border-radius: 50px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.basket-item-box {
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid var(--brand-color-orange);
+}
+
+.total__box {
+  margin: auto;
 }
 
 /* Header */
@@ -200,6 +275,12 @@ p {
   background: linear-gradient(214deg, #fe9c1c 0%, #ff5e2a 100%);
 }
 
+.home__btn:hover {
+  background: transparent;
+  border: 1px solid var(--brand-color-orange);
+  transition: 0.3s;
+}
+
 /* about section */
 .about__section {
   display: flex;
@@ -246,7 +327,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   box-sizing: border-box;
   border-radius: 30px;
   width: 300px;
@@ -295,4 +375,42 @@ p {
   background: transparent;
   border: 1px solid var(--brand-color-orange);
   transition: 0.3s;
+}
+
+.drinks__section h2 {
+  text-align: auto;
+}
+
+/* Footer */
+
+.footer {
+  padding: 32px 0;
+  background-color: var(--brand-color-card);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.address-link {
+  color: var(--brand-color-white);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
 }
