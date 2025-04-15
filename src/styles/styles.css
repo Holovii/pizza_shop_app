@@ -403,6 +403,13 @@ p {
   flex-grow: 1;
 }
 
+.footer-menu a:hover {
+  background: linear-gradient(215deg, #ff6432 0%, #ffa228 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .address-list,
 .address-info {
   flex-grow: 1;
